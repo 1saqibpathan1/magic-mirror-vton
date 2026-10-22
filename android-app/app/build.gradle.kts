@@ -98,7 +98,7 @@ dependencies {
     implementation("com.google.zxing:core:3.5.3")
 
     // USB UVC webcam — see camera/UvcCameraFragment.kt for integration notes
-    implementation("com.github.jiangdongguo.AndroidUSBCamera:libausbc:3.3.3")
+    implementation("com.github.chenyeju295.AndroidUSBCamera:libausbc:3.3.6")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
