@@ -2,6 +2,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://maven.scijava.org/content/repositories/public/") }
         gradlePluginPortal()
     }
 }
@@ -11,6 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://maven.scijava.org/content/repositories/public/") }
         // UVCCamera (libausbc) is published via JitPack, not Maven Central.
         maven { url = uri("https://jitpack.io") }
     }
