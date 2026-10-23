@@ -28,7 +28,7 @@ class UvcCameraController : CameraController {
             cont.resume(Result.failure(IllegalStateException("Camera isn't ready yet")))
             return@suspendCancellableCoroutine
         }
-        val outFile = File(f.requireContext().cacheDir, "capture_${System.currentTimeMillis()}.jpg")
+        val outFile = f.captureCacheFile("capture_${System.currentTimeMillis()}.jpg")
         f.capturePhoto(outFile) { file ->
             if (cont.isActive) {
                 if (file != null && file.exists()) {
